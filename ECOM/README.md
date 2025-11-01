@@ -1,0 +1,1 @@
+A complete e-commerce solution with FastAPI backend and modern frontend, ready for deployment.

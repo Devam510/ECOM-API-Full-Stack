@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🛍️ My E-Commerce Store</h1>
+        <div id="auth-section">
+            <button onclick="showRegister()">Register</button>
+            <button onclick="showLogin()">Login</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Auth Forms -->
+        <div id="register-form" class="form-container" style="display: none;">
+            <h2>Register</h2>
+            <input type="email" id="reg-email" placeholder="Email">
+            <input type="text" id="reg-name" placeholder="Full Name">
+            <input type="password" id="reg-password" placeholder="Password">
+            <button onclick="register()">Register</button>
+            <button onclick="hideForms()">Cancel</button>
+        </div>
+
+        <div id="login-form" class="form-container" style="display: none;">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <button onclick="hideForms()">Cancel</button>
+        </div>
+
+        <!-- Products Section -->
+        <section id="products-section">
+            <h2>Our Products</h2>
+            <div id="products-grid" class="products-grid">
+                <!-- Products will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart-section" style="display: none;">
+            <h2>🛒 Your Cart</h2>
+            <div id="cart-items"></div>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+
+        <!-- Orders Section -->
+        <section id="orders-section" style="display: none;">
+            <h2>Your Orders</h2>
+            <div id="orders-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by FastAPI Backend | Deployed on Netlify</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
