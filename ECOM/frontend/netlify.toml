@@ -1,8 +1,9 @@
 [build]
-  publish = "frontend"
+  publish = "ecom/frontend"
   command = ""
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
